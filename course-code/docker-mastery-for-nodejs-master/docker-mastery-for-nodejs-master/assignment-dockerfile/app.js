@@ -37,6 +37,7 @@ process.on('unhandledRejection', (err) => {
     console.log(err);
     process.exit(1);
 });
+
 // quit on ctrl-c when running docker in terminal
 process.on('SIGINT', function onSigint () {
 	console.info('Got SIGINT (aka ctrl-c in docker). Graceful shutdown ', new Date().toISOString());
